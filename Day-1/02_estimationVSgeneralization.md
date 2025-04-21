@@ -25,3 +25,23 @@
 
 - ML example:
   - Your model predicts house prices well on training data — but does it predict prices **correctly for future houses?**
+
+---
+
+## Example of Estimation and Generalization
+
+### 🟢 Estimation:
+
+“I measured the same person’s height 5 times. The results vary a bit. Now I want to estimate their height for the 6th time.”
+
+- ✅ You're using past, noisy data of the same case
+- ✅ Trying to get the best average guess
+- ✅ This is estimation.
+
+### 🔵 Generalization:
+
+“I saw 6 height measurements of one person. Now a **new person** comes, and I want to predict their height.”
+
+- ✅ This is a new case
+- ✅ You’re using patterns learned from the first person to predict something for someone else
+- ✅ This is generalization.
