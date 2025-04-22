@@ -82,6 +82,11 @@ From the machine’s view, it might see data in the form of:
 
 No labels, no manual input — but still **data**.
 
+### Another great example:
+
+Amazon/Netflix cluster user with similar performance
+e.g. "Customer who liked this also bought..."
+
 ### 🔑 Key Insight:
 
 In **unsupervised learning**, the data is often collected **implicitly** — through user behavior, logs, sensors, or system usage — rather than being typed in or explicitly labeled by the user.
