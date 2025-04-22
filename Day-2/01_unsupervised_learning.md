@@ -38,6 +38,8 @@ You didn’t tell the model what genre is what — it **discovered patterns** al
 
 ---
 
+# You said user give only the input data, but i haven't given any data. For instance i haven't given any data while i am listening to a song
+
 ## 🧩 You're Right — You Didn't Explicitly Give Data
 
 **Your behavior is the data.**
