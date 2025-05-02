@@ -39,6 +39,7 @@ When you plot training and test error over time (or complexity), you often see:
          |   \_____
          |         \_____
          |____________________> Model Complexity
+```
 
 ---
 
@@ -51,4 +52,3 @@ So while you **optimize training error using optimization techniques**, you shou
 - Use **cross-validation**
 - Monitor **validation/test error**
 - Apply **regularization** or **early stopping** if overfitting occurs
-```
