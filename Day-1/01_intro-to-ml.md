@@ -51,15 +51,111 @@ So, the machine does the learning, but a **human sets everything up.**
 
 ### 🟢 5. Two big problems ML tries to solve
 
-1. **Estimation:**
+# Estimation and Generalization in Machine Learning
 
-- When data is noisy or uncertain, how do we still guess the right answer?
-- Example: Predicting tomorrow’s weather from messy past data
+Machine Learning mainly tries to solve **two core problems**:
+1. **Estimation**
+2. **Generalization**
 
-2. **Generalization:**
+Understanding these two ideas explains what *training a model* really means.
 
-- How do we make predictions on new data we’ve never seen before?
-- This is the real power of machine learning.
+---
+
+## i. What is a Model?
+
+A **model** is a mathematical function with **unknown parameters**.
+
+Example:
+price = w × size + b
+
+- `w` → weight (how much price increases per unit size)
+- `b` → bias (base price)
+
+At the beginning:
+- We **do not know** the correct values of `w` and `b`
+- These values must be **learned from data**
+
+---
+
+## ii. Estimation (Learning from Known Data)
+
+### What is Estimation?
+**Estimation** means finding the **best possible values of the model parameters** using the data we already have.
+
+Example:
+We have data for 100 houses:
+
+| Size | Actual Price |
+|----|----|
+| 800 | 40L |
+| 1000 | 50L |
+| ... | ... |
+
+The model tries different values of `w` and `b` and checks:
+> “How close are my predicted prices to the real prices?”
+
+The process of finding the best `w` and `b` is called **estimation**.
+
+---
+
+## iii. Loss Function (How the Model Knows It Is Wrong)
+
+The model needs a way to measure **how wrong it is**.
+
+That is the job of a **loss function**.
+
+Example (Mean Squared Error):
+Loss = (Predicted Price − Actual Price)²
+
+- Small loss → good prediction
+- Large loss → bad prediction
+
+The goal of training:
+> **Minimize the loss**
+
+---
+
+## iv. Training a Model (What Actually Happens)
+
+Training means:
+1. Start with random values of parameters (`w`, `b`)
+2. Predict output using the model
+3. Calculate loss
+4. Adjust parameters to reduce loss
+5. Repeat many times
+
+⚠️ **Important**:
+- Humans do **NOT** manually change parameter values
+- The algorithm (like Gradient Descent) updates them automatically
+
+---
+
+## v. Generalization (Performance on New Data)
+
+After estimation (training), we test the model on **unseen data**.
+
+Example:
+- Training data → 100 houses
+- New house → 101st house (never seen before)
+
+If the model predicts the new house price well:
+✔️ Good **generalization**
+
+If it performs well only on training data but fails on new data:
+❌ Overfitting
+
+---
+
+## vi. Summary
+
+- **Estimation** → learning parameters from known data
+- **Loss function** → tells the model how wrong it is
+- **Training** → automatic parameter tuning to minimize loss
+- **Generalization** → ability to perform well on unseen data
+
+Machine Learning is not memorizing —  
+it is **learning patterns that generalize**.
+
 
 ---
 
