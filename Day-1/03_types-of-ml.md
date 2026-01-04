@@ -75,6 +75,7 @@ price = w × size + b
 - `w` → weight
 - `b` → bias
 - Output is a number
+```
 
 ### Common Regression Algorithms
 - Linear Regression
@@ -163,4 +164,4 @@ This is how supervised learning works.
 - Loss functions in detail
 - Bias–Variance tradeoff
 - Overfitting and Underfitting
-```
+  
