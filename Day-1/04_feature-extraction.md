@@ -67,7 +67,7 @@ X = [1200, 3, 1, 5]
 ["congratulations", "won", "free", "lottery", "click"]
 ```
 
-```sql
+
 
 2. Convert words into numbers (Bag of Words)
 
@@ -79,7 +79,6 @@ X = [1200, 3, 1, 5]
 | meeting | 0 |
 
 ### Feature Vector
-```
 
 X = [1, 1, 1, 0]
 
