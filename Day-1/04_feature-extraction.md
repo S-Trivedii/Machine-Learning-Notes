@@ -163,5 +163,3 @@ This selective focus is **feature extraction**.
 > Feature extraction is the process of transforming raw data into meaningful numerical representations for machine learning models.
 
 
-
-Wall color: Blue
